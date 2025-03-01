@@ -82,11 +82,7 @@ header nav ul li a:hover {
     border-radius: 5px;
     width: 200px;
 }
-@media (max-width: 768px) {
-    header nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
 .search-bar button {
     padding: 10px 20px;
     background-color: #38a838; /* Forest green */
@@ -99,6 +95,19 @@ header nav ul li a:hover {
 
 .search-bar button:hover {
     background-color: #307d03b8; /* Lime green */
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto; /* Allow the header to expand */
+    }
+
+    .search-bar {
+        margin-top: 10px; /* Add space between nav items and search bar */
+    }
 }
 
 /* Main Content */
