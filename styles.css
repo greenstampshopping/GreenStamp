@@ -183,9 +183,10 @@ h1 {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: calc(33.333% - 40px);
+    width: calc(50% - 20px); /* Changed to 50% for two products per row */
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 15px; /* Adjust this value if needed */
 }
 
 .product:hover {
