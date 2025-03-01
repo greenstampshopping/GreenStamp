@@ -78,53 +78,7 @@ document.querySelectorAll(".subcategories button").forEach(button => {
             displayProducts(filteredProducts, "gadgets-products");
         }
     });
-})
-}
-
-// Sample Product Data
-const products = [
-    // Add your product data here
-];
-
-// Function to display products
-function displayProducts(productsArray, containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    container.innerHTML = "";
-    productsArray.forEach(product => {
-        const productDiv = document.createElement("div");
-        productDiv.className = "product";
-        productDiv.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <a href="${product.link}" target="_blank" class="buy-button">Buy Now</a>
-        `;
-        container.appendChild(productDiv);
-    });
-}
-
-// Display all products on home page
-if (document.getElementById("all-products")) {
-    displayProducts(products, "all-products");
-}
-
-// Display newly added products (first 6 products for example)
-if (document.getElementById("new-products")) {
-    const newProducts = products.slice(-6).reverse();
-    displayProducts(newProducts, "new-products");
-}
-
-// Filter products by category
-document.querySelectorAll(".subcategories button").forEach(button => {
-    button.addEventListener("click", () => {
-        const category = button.getAttribute("data-category");
-        const filteredProducts = products.filter(product => product.category === category);
-        if (button.closest("#gadgets")) {
-            displayProducts(filteredProducts, "gadgets-products");
-        }
-    });
 });
-
 // Search functionality
 if (document.getElementById("search-button")) {
     document.getElementById("search-button").addEventListener("click", () => {
@@ -132,7 +86,7 @@ if (document.getElementById("search-button")) {
         const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchTerm));
         displayProducts(filteredProducts, "all-products");
         if (document.getElementById("new-products")) {
-            document.getElementById("new-products").style.display = "none";
+            document.getElementById("new-products").style.display = "none"; // Hide newly added products
         }
     });
 }
