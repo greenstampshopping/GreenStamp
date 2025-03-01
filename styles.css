@@ -305,7 +305,7 @@ footer {
 
 footer .footer-content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 footer .social-links {
