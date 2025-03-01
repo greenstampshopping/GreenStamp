@@ -9,7 +9,27 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
+/* Home Section Specific Styles */
+#home {
+    padding-top: 80px; /* Smaller top padding for the home section */
+    padding-bottom: 20px; /* Smaller bottom padding */
+}
 
+#home h1 {
+    font-size: 28px; /* Adjust font size for h1 titles */
+    color: #228b22; /* Forest green */
+    text-align: center;
+    margin-bottom: 15px; /* Smaller margin below h1 titles */
+    padding: 10px 0; /* Smaller padding for h1 titles */
+}
+
+#home .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px; /* Smaller margin above products */
+}
 /* Fixed Header */
 header {
     background-color: #97d097; /* Lime green */
