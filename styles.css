@@ -10,25 +10,22 @@ body {
     min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 /* Home Section Specific Styles */
-#home {
-    padding-top: 80px; /* Smaller top padding for the home section */
-    padding-bottom: 20px; /* Smaller bottom padding */
+/* Main Content */
+section {
+    padding-top: 120px; /* Add top padding to account for the fixed header */
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Allow the section to grow and push the footer to the bottom */
 }
 
-#home h1 {
-    font-size: 28px; /* Adjust font size for h1 titles */
-    color: #228b22; /* Forest green */
-    text-align: center;
-    margin-bottom: 15px; /* Smaller margin below h1 titles */
-    padding: 10px 0; /* Smaller padding for h1 titles */
-}
-
-#home .products {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 10px; /* Smaller margin above products */
+/* Adjust Section Padding for Mobile */
+@media (max-width: 768px) {
+    section {
+        padding-top: 150px; /* Increase top padding for mobile to account for stacked header */
+    }
 }
 /* Fixed Header */
 header {
