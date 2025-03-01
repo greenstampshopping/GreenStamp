@@ -30,7 +30,7 @@ header nav {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
-    height: 70px; /* Fixed height for the header */
+    height: auto; /* Allow the header to adjust its height */
 }
 
 .logo {
@@ -55,10 +55,11 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 15px; /* Add space between navigation items */
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 header nav ul li a {
@@ -75,6 +76,7 @@ header nav ul li a:hover {
 .search-bar {
     display: flex;
     gap: 10px;
+    margin-top: 10px; /* Add space above the search bar */
 }
 
 .search-bar input {
@@ -101,8 +103,8 @@ header nav ul li a:hover {
 /* Responsive Header for Mobile */
 @media (max-width: 768px) {
     header nav {
-        flex-direction: row; /* Keep items horizontal */
-        align-items: center; /* Center items vertically */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
         height: auto; /* Allow the header to adjust its height */
         padding: 10px 20px; /* Adjust padding for mobile */
     }
@@ -111,11 +113,11 @@ header nav ul li a:hover {
         flex-direction: row; /* Keep navigation links horizontal */
         gap: 10px; /* Add space between links */
         flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
+        margin-top: 10px; /* Add space above the navigation links */
     }
 
     .search-bar {
         width: 100%; /* Make search bar full width */
-        margin-top: 10px; /* Add space above the search bar */
     }
 
     .search-bar input {
@@ -129,7 +131,7 @@ header nav ul li a:hover {
 
 /* Main Content */
 section {
-    padding-top: 90px; /* Add top padding to account for the fixed header */
+    padding-top: 120px; /* Add top padding to account for the fixed header */
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -141,7 +143,7 @@ section {
 /* Adjust Section Padding for Mobile */
 @media (max-width: 768px) {
     section {
-        padding-top: 120px; /* Increase top padding for mobile to account for header */
+        padding-top: 180px; /* Increase top padding for mobile to account for header */
     }
 }
 
@@ -275,6 +277,7 @@ form button:hover {
     background-color: #32cd32; /* Lime green */
 }
 
+/* Footer */
 footer {
     background-color: #68b968; /* Lime green */
     padding: 20px 0;
