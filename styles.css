@@ -1,44 +1,32 @@
 /* General Styles */
+:root {
+    --primary-color: #228b22;
+    --secondary-color: #32cd32;
+    --background-color: #f0fff0;
+    --spacing: 20px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0fff0; /* Bright green background */
-    color: #228b22; /* Forest green text */
+    background-color: var(--background-color);
+    color: var(--primary-color);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
-}
-/* Home Section Specific Styles */
-/* Main Content */
-/* Main Content */
-section {
-    padding-top: 120px; /* Add top padding to account for the fixed header */
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex: 1; /* Allow the section to grow and push the footer to the bottom */
+    min-height: 100vh;
 }
 
-/* Adjust Section Padding for Mobile */
-@media (max-width: 768px) {
-    section {
-        padding-top: 150px; /* Increase top padding for mobile to account for stacked header */
-    }
-}
-/* Fixed Header */
+/* Header */
 header {
-    background-color: #97d097; /* Lime green */
+    background-color: #97d097;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fix the header at the top */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure the header is above other content */
-    height: auto; /* Allow the header to adjust its height */
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav {
@@ -48,24 +36,22 @@ header nav {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
-    height: auto; /* Allow the header to adjust its height */
 }
 
 .logo {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-    gap: 10px; /* Add space between the logo and the title */
+    align-items: center;
+    gap: 10px;
 }
 
 .logo h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #1a5c1a; /* Dark green color */
-    margin-right: 10px;
+    color: #1a5c1a;
 }
 
 .logo img {
-    height: 50px; /* Fixed height for the logo */
+    height: 50px;
 }
 
 header nav ul {
@@ -73,11 +59,7 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 15px; /* Add space between navigation items */
-}
-
-header nav ul li {
-    margin: 0;
+    gap: 15px;
 }
 
 header nav ul li a {
@@ -88,25 +70,24 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #c9f980; /* Yellow-green */
+    color: #c9f980;
 }
 
 .search-bar {
     display: flex;
     gap: 10px;
-    margin-top: 10px; /* Add space above the search bar */
 }
 
 .search-bar input {
     padding: 10px;
-    border: 1px solid #228b22; /* Forest green */
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     width: 200px;
 }
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: #38a838; /* Forest green */
+    background-color: var(--primary-color);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -115,67 +96,30 @@ header nav ul li a:hover {
 }
 
 .search-bar button:hover {
-    background-color: #307d03b8; /* Lime green */
-}
-
-/* Responsive Header for Mobile */
-@media (max-width: 768px) {
-    header nav {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
-        height: auto; /* Allow the header to adjust its height */
-        padding: 10px 20px; /* Adjust padding for mobile */
-    }
-
-    header nav ul {
-        flex-direction: row; /* Keep navigation links horizontal */
-        gap: 10px; /* Add space between links */
-        flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
-        margin-top: 10px; /* Add space above the navigation links */
-    }
-
-    .search-bar {
-        width: 100%; /* Make search bar full width */
-    }
-
-    .search-bar input {
-        width: 100%; /* Make input full width */
-    }
-
-    .search-bar button {
-        width: 100%; /* Make button full width */
-    }
+    background-color: var(--secondary-color);
 }
 
 /* Main Content */
 section {
-    padding-top: 120px; /* Add top padding to account for the fixed header */
+    padding-top: 120px;
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    flex: 1; /* Allow the section to grow and push the footer to the bottom */
-}
-
-/* Adjust Section Padding for Mobile */
-@media (max-width: 768px) {
-    section {
-        padding-top: 180px; /* Increase top padding for mobile to account for header */
-    }
+    flex: 1;
 }
 
 h1 {
-    color: #228b22; /* Forest green */
+    color: var(--primary-color);
     text-align: center;
     margin-bottom: 20px;
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: center;
 }
 
 .product {
@@ -183,10 +127,7 @@ h1 {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 20px); /* Changed to 50% for two products per row */
-    box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    gap: 15px; /* Adjust this value if needed */
 }
 
 .product:hover {
@@ -202,7 +143,7 @@ h1 {
 .buy-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #228b22; /* Forest green */
+    background-color: var(--primary-color);
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
@@ -211,19 +152,20 @@ h1 {
 }
 
 .buy-button:hover {
-    background-color: #32cd32; /* Lime green */
+    background-color: var(--secondary-color);
 }
 
+/* Subcategories */
 .subcategories {
     display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 20px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .subcategories button {
     padding: 10px 20px;
-    background-color: #228b22; /* Forest green */
+    background-color: var(--primary-color);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -232,94 +174,79 @@ h1 {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.subcategories button img {
-    width: 75px;
-    height: 75px;
 }
 
 .subcategories button:hover {
-    background-color: #32cd32; /* Lime green */
+    background-color: var(--secondary-color);
 }
 
-.contact-info {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-    justify-content: center;
-}
-
-.social-links a {
-    color: #228b22; /* Forest green */
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #32cd32; /* Lime green */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
-    padding: 10px;
-    border: 1px solid #228b22; /* Forest green */
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #228b22; /* Forest green */
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #32cd32; /* Lime green */
+.subcategories button img {
+    width: 50px;
+    height: 50px;
 }
 
 /* Footer */
 footer {
-    background-color: #68b968; /* Lime green */
+    background-color: #68b968;
     padding: 20px 0;
     text-align: center;
-    margin-top: auto; /* Push the footer to the bottom */
+    margin-top: auto;
 }
 
 footer .footer-content {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 footer .social-links {
-    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 footer .social-links a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 10px;
     transition: color 0.3s ease;
 }
 
 footer .social-links a:hover {
-    color: #5b861c; /* Yellow-green */
+    color: #5b861c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+
+    section {
+        padding-top: 180px;
+    }
+
+    .subcategories {
+        flex-direction: column;
+        align-items: center;
+    }
 }
