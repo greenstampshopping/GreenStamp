@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenstamp - Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Logo and Search Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+		<h3>GreenStamp</h3>
+                <img src="images/logo.png" alt="Greenstamp Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+                <li><a href="gadgets.html">Gadgets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Fashion Section -->
+    <section id="fashion">
+        <h1>Fashion</h1>
+        <div class="subcategories">
+            <button data-category="shirts">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_DR6C9GsDX7JhhNmgPTtje5dGXMp_SMaFg&s" alt="Shirts">
+                Shirts
+            </button>
+            <button data-category="pants">
+                <img src="images/pants-icon.png" alt="Pants">
+                Pants
+            </button>
+            <button data-category="tshirts">
+                <img src="images/tshirt-icon.png" alt="T-Shirts">
+                T-Shirts
+            </button>
+        </div>
+        <div class="products" id="fashion-products">
+            <!-- Fashion products will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Greenstamp. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/yourprofile" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://youtube.com/yourchannel" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="mailto:your.email@example.com">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenstamp - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Logo and Search Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+		<h3>GreenStamp</h3>
+                <img src="images/logo.png" alt="Greenstamp Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+                <li><a href="gadgets.html">Gadgets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-info">
+            <p>Email: your.email@example.com</p>
+            <div class="social-links">
+                <a href="https://instagram.com/yourprofile" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://youtube.com/yourchannel" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+            </div>
+        </div>
+        <!-- Contact Form -->
+        <form id="contact-form">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Greenstamp. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/yourprofile" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://youtube.com/yourchannel" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                <a href="mailto:your.email@example.com">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Step 1: Initialize EmailJS with your User ID
+        emailjs.init("T8zx0wMYHp5-Git3_");
+
+        // Step 2: Handle form submission
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Step 3: Get form data
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Step 4: Send email using EmailJS
+            emailjs.send("greenstamp_id", "template_8xlm2bn", {
+                email: email,
+                message: message,
+            })
+                .then((response) => {
+                    // Step 5: Show success message
+                    alert("Thank you for your message! We'll get back to you soon.");
+                    // Step 6: Clear the form
+                    document.getElementById("contact-form").reset();
+                })
+                .catch((error) => {
+                    // Step 7: Show error message
+                    alert("Oops! Something went wrong. Please try again.");
+                });
+        });
+    </script>
+</body>
+</html>
