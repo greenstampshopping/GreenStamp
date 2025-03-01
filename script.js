@@ -61,6 +61,8 @@ if (document.getElementById("new-products")) {
     displayProducts(newProducts, "new-products");
 }
 
+
+
 // Filter products by category
 document.querySelectorAll(".subcategories button").forEach(button => {
     button.addEventListener("click", () => {
@@ -77,7 +79,6 @@ document.querySelectorAll(".subcategories button").forEach(button => {
         }
     });
 });
-
 // Search functionality
 if (document.getElementById("search-button")) {
     document.getElementById("search-button").addEventListener("click", () => {
