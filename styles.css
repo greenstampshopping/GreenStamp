@@ -20,6 +20,7 @@ header {
     left: 0;
     width: 100%; /* Full width */
     z-index: 1000; /* Ensure the header is above other content */
+    height: 70px; /* Fixed height for the header */
 }
 
 header nav {
@@ -29,8 +30,32 @@ header nav {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
-    height: 70px; /* Fixed height for the header */
+    height: 100%; /* Take full height of the header */
 }
+
+/* Main Content */
+section {
+    padding-top: 90px; /* Add top padding to account for the fixed header */
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1; /* Allow the section to grow and push the footer to the bottom */
+}
+
+/* Fixed Header */
+header {
+    background-color: #97d097; /* Lime green */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
 
 .logo {
     display: flex;
