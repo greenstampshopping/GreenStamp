@@ -30,7 +30,7 @@ const products = [
     // Gadgets - Watches
     { id: 29, name: "Smart Watch", category: "watches", image: "images/watch1.jpg", link: "https://example.com/watch1" },
     { id: 30, name: "Analog Watch", category: "watches", image: "images/watch2.jpg", link: "https://example.com/watch2" },
-    { id: 31, name: "Digital Watch", category: "watches", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_DR6C9GsDX7JhhNmgPTtje5dGXMp_SMaFg&s", link: "https://example.com/watch3" },
+    { id: 31, name: "TIMEX Watch $599", category: "watches", image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/watch/e/g/f/-original-imagrk9rypmyhjmq.jpeg?q=90&crop=false", link: "https://fkrt.co/Iwhybx" },
 ];
 
 // Function to display products
