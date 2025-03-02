@@ -1,8 +1,10 @@
 /* General Styles */
 :root {
-    --primary-color: #228b22;
-    --secondary-color: #32cd32;
-    --background-color: #f0fff0;
+    --primary-color: #2a6f5c; /* Deep green for a professional look */
+    --secondary-color: #4caf8a; /* Vibrant green for accents */
+    --accent-color: #9ee953; /* Coral for call-to-action elements */
+    --background-color: #f0faf7; /* Light greenish-white for a clean background */
+    --text-color: #2d3436; /* Dark gray for text */
     --spacing: 20px;
 }
 
@@ -11,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,7 +21,7 @@ body {
 
 /* Header */
 header {
-    background-color: #97d097;
+    background-color: var(--primary-color);
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -47,7 +49,7 @@ header nav {
 .logo h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #1a5c1a;
+    color: #ffffff; /* White for contrast */
 }
 
 .logo img {
@@ -70,7 +72,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #c9f980;
+    color: var(--accent-color); /* Coral for hover effect */
 }
 
 .search-bar {
@@ -87,7 +89,7 @@ header nav ul li a:hover {
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -96,7 +98,7 @@ header nav ul li a:hover {
 }
 
 .search-bar button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color); /* Coral for hover effect */
 }
 
 /* Main Content */
@@ -153,7 +155,7 @@ h1 {
 .buy-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
@@ -162,7 +164,7 @@ h1 {
 }
 
 .buy-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color); /* Coral for hover effect */
 }
 
 /* Subcategories */
@@ -175,7 +177,7 @@ h1 {
 
 .subcategories button {
     padding: 10px 20px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -187,7 +189,7 @@ h1 {
 }
 
 .subcategories button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color); /* Coral for hover effect */
 }
 
 .subcategories button img {
@@ -197,7 +199,7 @@ h1 {
 
 /* Footer */
 footer {
-    background-color: #68b968;
+    background-color: var(--primary-color);
     padding: 20px 0;
     text-align: center;
     margin-top: auto;
@@ -221,7 +223,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-    color: #5b861c;
+    color: var(--accent-color); /* Coral for hover effect */
 }
 
 /* Contact Section */
@@ -252,7 +254,7 @@ footer .social-links a:hover {
 }
 
 .social-links a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color); /* Coral for hover effect */
 }
 
 /* Contact Form */
@@ -279,7 +281,7 @@ form textarea {
 
 form button {
     padding: 10px 20px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -288,7 +290,7 @@ form button {
 }
 
 form button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color); /* Coral for hover effect */
 }
 
 /* Responsive Design */
