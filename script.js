@@ -31,7 +31,7 @@ const products = [
     { id: 29, name: "Smart Watch", category: "watches", image: "images/watch1.jpg", link: "https://example.com/watch1" },
     { id: 30, name: "Analog Watch", category: "watches", image: "images/watch2.jpg", link: "https://example.com/watch2" },
     { id: 31, name: "TIMEX Watch $599", category: "watches", image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/watch/e/g/f/-original-imagrk9rypmyhjmq.jpeg?q=90&crop=false", link: "https://fkrt.co/Iwhybx" },
-     { id: 32, name: "Trigger b1 $799", category: "", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/headphone/v/p/3/-original-imah8bfrrurageu2.jpeg?q=70&crop=false", link: "https://fktr.in/XKAxe6d" },
+     { id: 32, name: "Trigger b1 $799", category: "", image: "https://rukminim2.flixcart.com/image/750/900/xif0q/headphone/f/b/v/-original-imagywufhynhgt7x.jpeg?q=20&crop=false", link: "https://fktr.in/97WAIpw" },
 ];
 
 // Function to display products
