@@ -38,7 +38,7 @@ const products = [
     // { id: 35, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
     // { id: 36, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Artboard2copy_jpg.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
     // skull pattern tshirt 
-     { id: 37, name: "T-Shirt t1 ", category: "tshirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/e/f/2/l-hlts003000-highlander-original-imagzsdksmuvkrfg.jpeg?q=70&crop=false", link: "https://example.com/tshirt1" },
+     { id: 37, name: "T-Shirt t1 ", category: "tshirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/e/f/2/l-hlts003000-highlander-original-imagzsdksmuvkrfg.jpeg?q=70&crop=false", link: "https://fktr.in/Unjn9Ss" },
     
 ];
 
