@@ -33,10 +33,10 @@ const products = [
     { id: 31, name: "TIMEX Watch $599", category: "watches", image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/watch/e/g/f/-original-imagrk9rypmyhjmq.jpeg?q=90&crop=false", link: "https://fkrt.co/Iwhybx" },
      { id: 32, name: "Trigger b1 $799", category: "", image: "https://rukminim2.flixcart.com/image/750/900/xif0q/headphone/f/b/v/-original-imagywufhynhgt7x.jpeg?q=20&crop=false", link: "https://fktr.in/97WAIpw" },
     // power - banks 
-     { id: 33, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Purple_png.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
-     { id: 34, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
-     { id: 35, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
-     { id: 36, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Artboard2copy_jpg.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
+    // { id: 33, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Purple_png.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
+    // { id: 34, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
+    // { id: 35, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
+    // { id: 36, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Artboard2copy_jpg.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
 ];
 
 // Function to display products
