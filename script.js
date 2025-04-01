@@ -39,7 +39,8 @@ const products = [
     // { id: 36, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Artboard2copy_jpg.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
     // skull pattern tshirt 
      { id: 37, name: "T-Shirt t1 ", category: "tshirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/e/f/2/l-hlts003000-highlander-original-imagzsdksmuvkrfg.jpeg?q=70&crop=false", link: "https://fktr.in/Unjn9Ss" },
-    
+    // blue shirt
+     { id: 38, name: "Blue Shirt s1 ", category: "shirts", image: "https://rukminim2.flixcart.com/image/832/832/l2tcfbk0/shirt/e/e/e/l-khsh000750-ketch-original-image2psaexg4yym.jpeg?q=70&crop=false", link: "https://myntr.in/BE74jt" },
 ];
 
 // Function to display products
