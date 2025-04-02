@@ -33,14 +33,14 @@ const products = [
     { id: 31, name: "TIMEX Watch 599", category: "watches", image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/watch/e/g/f/-original-imagrk9rypmyhjmq.jpeg?q=90&crop=false", link: "https://fkrt.co/Iwhybx" },
      { id: 32, name: "Trigger b1 799", category: "", image: "https://rukminim2.flixcart.com/image/750/900/xif0q/headphone/f/b/v/-original-imagywufhynhgt7x.jpeg?q=20&crop=false", link: "https://fktr.in/97WAIpw" },
     // power - banks 
-    // { id: 33, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Purple_png.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
-    // { id: 34, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
-    // { id: 35, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
-    // { id: 36, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Artboard2copy_jpg.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
+     { id: 35, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Purple_png.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
+     { id: 36, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
+     { id: 37, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
+     { id: 38, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Artboard2copy_jpg.webp?v=1709538713&width=900", link: "https://example.com/watch1" },
     // skull pattern tshirt 
-     { id: 37, name: "T-Shirt t1 ", category: "tshirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/e/f/2/l-hlts003000-highlander-original-imagzsdksmuvkrfg.jpeg?q=70&crop=false", link: "https://fktr.in/Unjn9Ss" },
+     { id: 33, name: "T-Shirt t1 ", category: "tshirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/e/f/2/l-hlts003000-highlander-original-imagzsdksmuvkrfg.jpeg?q=70&crop=false", link: "https://fktr.in/Unjn9Ss" },
     // blue shirt
-     { id: 38, name: "Blue Shirt s1 ", category: "shirts", image: "https://rukminim2.flixcart.com/image/832/832/l2tcfbk0/shirt/e/e/e/l-khsh000750-ketch-original-image2psaexg4yym.jpeg?q=70&crop=false", link: "https://myntr.in/BE74jt" },
+     { id: 34, name: "Blue Shirt s1 ", category: "shirts", image: "https://rukminim2.flixcart.com/image/832/832/l2tcfbk0/shirt/e/e/e/l-khsh000750-ketch-original-image2psaexg4yym.jpeg?q=70&crop=false", link: "https://myntr.in/BE74jt" },
 ];
 
 // Function to display products
