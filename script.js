@@ -67,7 +67,7 @@ if (document.getElementById("all-products")) {
 
 // Display newly added products (first 6 products for example)
 if (document.getElementById("new-products")) {
-    const newProducts = products.slice(-6).reverse();
+    const newProducts = products.slice().reverse();
     displayProducts(newProducts, "new-products");
 }
 
