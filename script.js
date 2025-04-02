@@ -39,7 +39,7 @@ const products = [
      // power - banks 
      { id: 35, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Purple_png.webp?v=1709538713&width=900", link: "https://fkrt.co/uK6CWN" },
      { id: 36, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://myntr.in/I68hq0" },
-     { id: 37, name: "Power bank p1", category: "powerbank", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/power-bank/h/q/8/-original-imagxhmwg3gpbhat.jpeg?q=70&crop=false", link: "https://fkrt.co/ruZrjg" },
+     { id: 37, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/artboard_1_1.webp?v=1709538713&width=900", link: "https://fkrt.co/ruZrjg" },
      { id: 38, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Artboard2copy_jpg.webp?v=1709538713&width=900", link: "https://myntr.in/GKuOtd" },
 ];
 
