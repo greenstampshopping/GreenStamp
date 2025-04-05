@@ -44,6 +44,7 @@ const products = [
     // 2 shirts 
     { id: 39, name: "Shirt Rs.239", category: "shirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/g/9/w/xxl-htsofb009flipkart-white-xxl-aadi-original-imagmqfxf82eqnhu.jpeg?q=70&crop=false", link: "https://fkrt.co/VC8W6Y" },
     { id: 40, name: "Shirt Rs.239", category: "shirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/2/f/r/2xl-ts-shirt1028-tanip-original-imah9ncynzhf2kaf.jpeg?q=70&crop=false", link: "https://fkrt.co/jtcExS" },
+    { id: 41, name: "Watch ", category: "watches", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/watch/m/k/w/-original-imagrcjhxzmmgedc.jpeg?q=70&crop=false", link: "https://fkrt.co/aiXUt1" },
 ];
 
 // Function to display products
