@@ -41,10 +41,6 @@ const products = [
      { id: 36, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Black_png_0852d69a-4c4b-490a-ad14-504432275667.webp?v=1709538713&width=900", link: "https://myntr.in/I68hq0" },
      { id: 37, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/artboard_1_1.webp?v=1709538713&width=900", link: "https://fkrt.co/ruZrjg" },
      { id: 38, name: "Power bank p1", category: "powerbank", image: "https://ambraneindia.com/cdn/shop/files/Artboard2copy_jpg.webp?v=1709538713&width=900", link: "https://myntr.in/GKuOtd" },
-    // 2 shirts 
-    { id: 39, name: "Shirt Rs.239", category: "shirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/g/9/w/xxl-htsofb009flipkart-white-xxl-aadi-original-imagmqfxf82eqnhu.jpeg?q=70&crop=false", link: "https://fkrt.co/VC8W6Y" },
-    { id: 40, name: "Shirt Rs.239", category: "shirts", image: "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/2/f/r/2xl-ts-shirt1028-tanip-original-imah9ncynzhf2kaf.jpeg?q=70&crop=false", link: "https://fkrt.co/jtcExS" },
-    { id: 41, name: "Watch ", category: "watches", image: "https://rukminim2.flixcart.com/image/832/832/kikluvk0-0/watch/z/n/o/as000010e-allen-solly-original-imafybxrbqgapybk.jpeg?q=70&crop=false", link: "https://fkrt.co/aiXUt1" },
 ];
 
 // Function to display products
